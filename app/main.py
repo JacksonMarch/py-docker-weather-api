@@ -5,7 +5,7 @@ URL = "https://api.weatherapi.com/v1/current.json?"
 FILTERING = "Paris"
 
 
-def get_weather():
+def get_weather() -> None:
     api_key = os.environ.get("API_KEY")
     if not api_key:
         print("API_KEY is missing!")
